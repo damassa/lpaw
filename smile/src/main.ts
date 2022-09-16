@@ -5,6 +5,11 @@ import { Player } from './shapes/Player';
 import { CANVAS, CTX } from './utils/canvas';
 import { createPoints } from './utils/createPoints';
 
+let song = new Audio();
+song.src = '/sounds/01.Hammer Smashed Face.mp3';
+window.addEventListener('keydown', () => {
+  song.play();
+})
 
 let numberOfPoints: number = 1;
 let enemyRate: number = 0.5;
@@ -17,7 +22,7 @@ let enemyRadius: number = 15;
 let player = new Player(
   CANVAS.width / 2,
   CANVAS.height / 2,
-  20,
+  50,
   playerColor,
   playerSpeed
 );

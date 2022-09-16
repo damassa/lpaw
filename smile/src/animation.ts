@@ -1,5 +1,5 @@
-import Circ from './shapes/Circ';
 import { removeKeyDownEvent } from './keyboard';
+import Circ from './shapes/Circ';
 import { Player } from './shapes/Player';
 import { CANVAS } from './utils/canvas';
 
@@ -54,7 +54,6 @@ function handleEnemies(
       gameOver(keys, player);
     }
 
-    // remover inimigo do array quando chegar no final da tela
     if (enemy.y > CANVAS.height) enemies.splice(index, 1);
   });
 }
