@@ -23,7 +23,7 @@ function handlePoint(
           Math.random() * CANVAS.width,
           Math.random() * CANVAS.height,
           10,
-          'orange'
+          'yellow'
         )
       );
     }

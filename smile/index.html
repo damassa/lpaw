@@ -5,9 +5,24 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SMILE - THE GAME</title>
+    <link rel="stylesheet" href="./src/style.css">
   </head>
   <body>
-    <div id="app"></div>
+    <div class="points">
+      <p>Points: <span id="points">0</span></p>
+      <canvas width="500" height="400" tabindex="1">
+        Seu navegador não suporta a tag canvas.
+      </canvas>
+      <div id="game-over">
+        <strong>Game over!</strong>
+        <button onclick="reloadGame()">Try again</button>
+      </div>
+    </div>
     <script type="module" src="/src/main.ts"></script>
+    <script>
+      function reloadGame() {
+        window.location.reload();
+      }
+    </script>
   </body>
 </html>
